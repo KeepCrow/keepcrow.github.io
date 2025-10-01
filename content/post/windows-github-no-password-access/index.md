@@ -1,10 +1,10 @@
 ---
 title: Windows下无密码访问Github的方法
-description: 一种 Windows 环境下，无密码访问 Github 克隆和操作代码仓的方法。
-date: 2025-10-01 21:44:00+0000
+description: 一种 Windows 环境下，无密码访问 Github 克隆和操作代码仓的方法
+date: 2025-10-01
 image: cover.jpg
 categories:
-    - Permanent
+    - Atomic
 tags:
     - topic/git
     - concept/SSH
@@ -18,12 +18,16 @@ tags:
 通过将公钥放到 Github 上，私钥保存在本地的方法，达到**不需要密码即可访问 Github** 的目的。
 
 ## 操作方法
-#### 一、创建公私钥
+### 一、创建公私钥
 > [!Note] 能够创建 SSH 公私钥对的前提是本地已经安装了 OpenSSH
 
 在 `~/.ssh` 文件夹下直接打开 PowerShell 窗口执行命令：
 ```powershell
-$>ssh-keygen -C "you_email@some_email.com"
+ssh-keygen -C "you_email@some_email.com"
+```
+
+其执行结果如下所示：
+```powershell
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (C:\Users\keepC/.ssh/id_ed25519): github_ed25519
 Enter passphrase (empty for no passphrase): 
@@ -60,7 +64,7 @@ The key's randomart image is:
 
 其中私钥存放于本地，公钥存放到 Github 上。
 
-#### 二、上传公钥
+### 二、上传公钥
 将公钥添加到 Github 上的方法比较简单，其已经提供了接口。
 
 > [!Note] 这个配置，一个本地设备仅需配置一次，如果多个本地设备添加不同的公钥即可。
@@ -83,7 +87,7 @@ Please make sure you have the correct access rights
 and the repository exists.
 ```
 
-#### 三、配置访问 Github 的方法
+### 三、配置访问 Github 的方法
 需要在 `~/.ssh/config` 文件中添加配置，指明在访问 Github 时，使用哪个密钥文件：
 ```config
 Host github.com
