@@ -1,30 +1,30 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "仰望星空，脚踏实地"
+  content: "翻过这座山，可能还是山；但不去翻，你永远不知道山那边是什么"
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+    label: "前往我的主页"
+    link: "https://github.com/KeepCrow"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+  - title: "Eous"
+    image: "/images/eous.png"
+    content: "Eous 是一个小型机器人项目，我想借这个项目实现一些自己的想法，顺便学一下嵌入式相关的知识"
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Eous 原型就是绝区零里的伊埃斯"
+      - "出于复杂度的考量，Eous 将基于双轮平衡机器人进行改造"
+      - "Eous 具备数据传输功能，可以连接 Wifi，蓝牙等设备"
+      - "Eous 具备人体自动识别和跟随功能，保持在一米外跟随"
+      - "可以通过远程设备访问 Eous 对其进行控制"
+      - "可以通过远程设备直接访问 Eous 的摄像头，并进行对话"
     button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
+      enable: true
+      label: "前往项目地址"
+      link: ""
 
   - title: "Discover the Key Features Of Hugo"
     image: "/images/service-2.png"
